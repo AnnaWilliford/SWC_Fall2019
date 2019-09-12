@@ -109,9 +109,8 @@ Each will appear as:
 - italics with underscores
 - code-type font with backticks
 
-(I prefer hyphens over asterisks, myself.)
 
-You can make a numbered list by just using numbers. You can use the same number over and over if you want:
+You can make a numbered list by just using numbers. You can use the same number over and over if you want, but make sure you have a space between the dot and your list item!
 
 ```
 1. bold with double-asterisks
