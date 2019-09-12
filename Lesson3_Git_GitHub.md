@@ -123,7 +123,7 @@ $ touch notes.txt
 #open with Sublime:
 $ subl notes.txt
 
-#Add test: "My notes about git:"
+#Add text: "My notes about git:"
 #Save and close.
 
 #Check contens of this file
