@@ -224,26 +224,17 @@ In this example, code is shown, but not executed.
 ## Inline R code
 
 You can make _every_ number in your report reproducible.   
-Use <code>&#96;r</code> and <code>&#96;</code> for an in-line code chunk.
+Use <code>&#96;r</code> and <code>&#96;</code> for an in-line code chunk. Don't let these in-line chunks get split across lines.
+
 For example:
 ```
-The mean of life expectancy column is `r mean(gapminder$lifeExp)` 
+The mean of life expectancy column is `r mean(gapminder$lifeExp)`. 
 ```
-
-, like so: <code>&#96;r round(some_value, 2)&#96;</code>. The code will be executed and replaced with the _value_ of the result.
-
+The code will be executed and replaced with the _value_ of the result:
+```
+The mean of life expectancy column is 59.4744394.
+```
 Don't let these in-line chunks get split across lines.
-
-Perhaps precede the paragraph with a larger code chunk that does calculations and defines things, with `include=FALSE` for that larger chunk (which is the same as `echo=FALSE` and `results="hide"`).
-
-I'm very particular about rounding in such situations. I may want `2.0`, but `round(2.03, 1)` will give just `2`.
-
-The [`myround`](https://github.com/kbroman/broman/blob/master/R/myround.R) function in my [R/broman](https://github.com/kbroman) package handles
-this.
-
-> ### Challenge
->
-> Try out a bit of in-line R code.
 
 
 ## Other output options
