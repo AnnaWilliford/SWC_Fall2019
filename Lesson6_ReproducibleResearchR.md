@@ -61,7 +61,7 @@ The initial chunk of text contains instructions for R: you give the thing a titl
 ---
 title: "Initial R Markdown document"
 author: "Balan Ramesh"
-date: "September 23, 2018"
+date: "September 11, 2019"
 output: html_document
 ---
 ```
@@ -70,10 +70,10 @@ You can delete any of those fields if you don't want them included. The double-q
 
 RStudio creates the document with some example text to get you started. Note below that there are chunks like
 
-```
+
 ```{r}
 summary(cars)
-``````
+```
 
 These are chunks of R code that will be executed by knitr and replaced by their results. More on this later.
 
