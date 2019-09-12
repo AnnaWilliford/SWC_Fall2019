@@ -140,7 +140,7 @@ You _compile_ the R Markdown document to an html webpage by clicking the "Knit H
 >
 > Create a new R Markdown document. Delete all of the R code chunks and write a bit of Markdown (some sections, some italicized text, and an itemized list).
 >
-> Convert the document to a webpage.
+> Convert the document to a webpage with `knit` button .
 
 ## A bit more Markdown
 
