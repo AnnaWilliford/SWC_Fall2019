@@ -1,14 +1,12 @@
-Software Carpentry Workshop: Lesson6_ReproducibleResearchR
-===
-Instructor: Balan Ramesh
-Time: 1.5 hours
+# Software Carpentry Workshop
 
-Note: add "?both" to the end of the URL if you would like to view both the markdown and rendered document side-by-side.
+## Lesson6: Reproducible research 
+This lesson is based on [this Software Carpentry lesson](https://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/)
+
+#### Please make sure your directory structure is setup as described [here](https://github.com/uta-carpentries/SoftwareCarpentryWorkshops_general/blob/master/Data_DirectoryStructure_Setup.md)
 
 ## Introduction
 Documenting and sharing the progress and results of data analysis is one of the most important aspects of data analysis and scientific inquiry. However, if you have had to produce reports of your data analysis progress, through emails, MS Word documents, or even scientific papers, you know the traditional methods and tools for documenting data analysis are poorly suited to this task. Today, we will be working with a powerful `R` package called `knitr`, which integrates a project narrative with the code and output (includig plots) of data analysis, all within a portable and easily read `html` document. This can be readily shared with others and fosters an open, reproducible method for documenting the progress and results of your work.
-
-Note: This lesson is modified from the [Software Carpentry workshop on producing reports](https://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/).
 
 ## Objectives
 - Value of reproducible reports
