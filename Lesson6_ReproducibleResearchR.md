@@ -167,7 +167,7 @@ That is, you place a chunk of R code between <code>&#96;&#96;&#96;{r chunk_name}
 ```
 Add code chunks to
 - Load the ggplot2 package
-- Read the gapminder data
+- Read the gapminder data and show first few lines of the dataset
 - Create a plot
 ```
 **Solution**
