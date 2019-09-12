@@ -171,13 +171,20 @@ Add code chunks to
 - Read the gapminder data
 - Create a plot
 ```
-> **Solution**
+**Solution**
+> `` ``` ``{r load_ggplot2}  
+> library(ggplot2) 
+> `` ``` ``
 >
-> `` ``` ``{r load_data}  
-> gapminder<-read.table("gapminder.txt", header = TRUE)
+> `` ``` ``{r load_gapminder}  
+> gapminder<-read.table("gapminder.txt", header = TRUE)  
 > head(gapminder)  
 > `` ``` ``
 >
+> `` ``` ``{r make_plot}  
+> ggplot(data=gapminder, aes(x = gdpPercap, y = lifeExp, color=continent)) +geom_point()  
+> `` ``` ``
+
 ## How things get compiled
 
 When you press the "Knit HTML" button, the R Markdown document is processed by [knitr](http://yihui.name/knitr) and a plain Markdown document is produced (as well as, potentially, a set of figure files): the R code is executed and replaced by both the input and the output; if figures are produced, links to those figures are included.
