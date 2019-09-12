@@ -223,9 +223,14 @@ In this example, code is shown, but not executed.
 
 ## Inline R code
 
-You can make _every_ number in your report reproducible.  
-Use `` ` `` `r Rcode` `` ` `` for in-line code chunk. 
-Use <code>&#96;r</code> and <code>&#96;</code> for an in-line code chunk, like so: <code>&#96;r round(some_value, 2)&#96;</code>. The code will be executed and replaced with the _value_ of the result.
+You can make _every_ number in your report reproducible.   
+Use <code>&#96;r</code> and <code>&#96;</code> for an in-line code chunk.
+For example:
+```
+The mean of life expectancy column is `r mean(gapminder$lifeExp)` 
+```
+
+, like so: <code>&#96;r round(some_value, 2)&#96;</code>. The code will be executed and replaced with the _value_ of the result.
 
 Don't let these in-line chunks get split across lines.
 
