@@ -158,19 +158,26 @@ The main code chunks look like this:
 
 
 `` ``` ``{r load_data}  
-gapminder <- read.csv("~/Desktop/gapminder.csv")  
+gapminder<-read.table("gapminder.txt", header = TRUE)
+head(gapminder)  
 `` ``` ``
 
 That is, you place a chunk of R code between <code>&#96;&#96;&#96;{r chunk_name}</code> and <code>&#96;&#96;&#96;</code> . It's a good idea to give each chunk a name, as they will help you to fix errors and, if any graphs are produced, the file names are based on the name of the code chunk that produced them.
 
-> ### Challenge
+**Challenge**
+```
+Add code chunks to
+- Load the ggplot2 package
+- Read the gapminder data
+- Create a plot
+```
+> **Solution**
 >
-> Add code chunks to
+> `` ``` ``{r load_data}  
+> gapminder<-read.table("gapminder.txt", header = TRUE)
+> head(gapminder)  
+> `` ``` ``
 >
-> - Load the ggplot2 package
-> - Read the gapminder data
-> - Create a plot
-
 ## How things get compiled
 
 When you press the "Knit HTML" button, the R Markdown document is processed by [knitr](http://yihui.name/knitr) and a plain Markdown document is produced (as well as, potentially, a set of figure files): the R code is executed and replaced by both the input and the output; if figures are produced, links to those figures are included.
