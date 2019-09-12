@@ -461,7 +461,7 @@ and then push (git push) it to GitHub.
 If you find an interesting repository on GitHub, you can copy it to your own GitHub account or to your own computer. This is also the first step to take if you want to conribute to projects created by other people.   
 
 Here is a repository that might be of interest to you:  
-github.com/uta-carpentries/SWC_Fall2019 
+https://github.com/uta-carpentries/SWC_Fall2019
 
 This repository contains Lessons for this workshop. You can just visit our repository and remind yourselves about what we did or you can copy this repository to your own GitHub account.  
 
