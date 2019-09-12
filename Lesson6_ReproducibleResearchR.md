@@ -213,30 +213,13 @@ Canada
 `` ``` ``  
 In the above example, code is evaluated, but not shown.  
 
-Or:
+Or:  
 `` ``` ``{r subset gapminder, eval=FALSE}  
 Canada=gapminder[gapminder$country=="Canada",]  
 Canada  
 `` ``` ``  
 In this example, code is shown, but not executed.  
 
-Often there will be particular options that you'll want to use repeatedly; for this, you can set _global_ chunk options, like so:
-
-```
-```{r global_options, echo=FALSE}
-knitr::opts_chunk$set(fig.path="Figs/", message=FALSE, warning=FALSE,
-                      echo=FALSE, results="hide", fig.width=11)
-``````
-
-The `fig.path` option defines where the figures will be saved. The `/` here is really important; without it, the figures would be saved in the standard place but just with names that being with `Figs`.
-
-If you have multiple R Markdown files in a common directory, you might want to use `fig.path` to define separate prefixes for the figure file names, like `fig.path="Figs/cleaning-"` and `fig.path="Figs/analysis-"`.
-
-
-> ### Challenge
->
-> Use chunk options to control the size of a figure and to hide the
-> code.
 
 ## Inline R code
 
