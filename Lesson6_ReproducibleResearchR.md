@@ -71,8 +71,8 @@ You can delete any of those fields if you don't want them included. The double-q
 RStudio creates the document with some example text to get you started. Note below that there are chunks like
 
 
-`` ```{r cars}  
-summary(cars)  
+`` ```{r cars} <br> 
+summary(cars) <br> 
 `` ```  
 ```
 ```
