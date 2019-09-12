@@ -156,10 +156,10 @@ Markdown is interesting and useful, but the real power comes from mixing markdow
 
 The main code chunks look like this:
 
-```
-```{r load_data}
-gapminder <- read.csv("~/Desktop/gapminder.csv")
-``````
+
+`` ``` ``{r load_data}  
+gapminder <- read.csv("~/Desktop/gapminder.csv")  
+`` ``` ``
 
 That is, you place a chunk of R code between <code>&#96;&#96;&#96;{r chunk_name}</code> and <code>&#96;&#96;&#96;</code> . It's a good idea to give each chunk a name, as they will help you to fix errors and, if any graphs are produced, the file names are based on the name of the code chunk that produced them.
 
