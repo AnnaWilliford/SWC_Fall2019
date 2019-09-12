@@ -46,6 +46,8 @@ knitr allows you to mix basically any sort of text with any sort of code, but we
 
 ## Creating an R Markdown file
 
+**Please copy `gapminder.txt` to `Lesson6_ReproducibleResearchR` folder**
+
 Within R Studio, click File &rarr; New File &rarr; R Markdown and you'll get a dialog box like this:
 
 ![](https://github.com/swcarpentry/r-novice-gapminder/raw/gh-pages/fig/New_R_Markdown.png)
@@ -234,20 +236,12 @@ The code will be executed and replaced with the _value_ of the result:
 ```
 The mean of life expectancy column is 59.4744394.
 ```
-Don't let these in-line chunks get split across lines.
 
 
 ## Other output options
 
 You can also convert R Markdown to a PDF or a Word document. Click the little triangle next to the "Knit HTML" button to get a drop-down menu. Or you could put `pdf_document` or `word_document` in the header of the file.
 
-> ## Tip: Creating PDF documents
->
-> Creating .pdf documents may require installation of some extra software. If required this is detailed in an error message.
->
-> Tex for windows is available [here](http://miktex.org/2.9/setup).
->
-> Tex for mac is available [here](http://tug.org/mactex).
 
 ## Resources
 
