@@ -213,7 +213,7 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 ```
-Everything is up to date!
+Everything is up-to-date!
 
 You can check the history of your commits:
 ```
@@ -225,7 +225,7 @@ Date:   Thu Nov 2 13:29:28 2017 -0500
 
     first note 
     
-#or for a faster view
+#or for a condensed view
 $ git log --oneline
 ```
 In summary, here are the steps that must be completed to track changes in your documents with Git.
@@ -237,7 +237,7 @@ In summary, here are the steps that must be completed to track changes in your d
 
  **Challenge**
 ```
- Open notes.txt in text editor and add commands that you need to execute in order to:
+ Open notes.txt in text editor and record commands that you need to execute in order to:
  1. turn a new folder into git repository, 
  2. track changes to a file with Git. 
  Save your changes and commit your changes with Git. You can use "added git commands" as your commit message 
