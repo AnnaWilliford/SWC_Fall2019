@@ -207,11 +207,18 @@ There are a variety of options to affect how the code chunks are treated.
 
 So you might write:
 
-```
-```{r load_libraries, echo=FALSE, message=FALSE}
-library("dplyr")
-library("ggplot2")
-``````
+`` ``` ``{r subset gapminder, echo=FALSE}  
+Canada=gapminder[gapminder$country=="Canada",]  
+Canada  
+`` ``` ``
+In the above example, code is evaluated, but not shown.  
+
+Or:
+`` ``` ``{r subset gapminder, eval=FALSE}  
+Canada=gapminder[gapminder$country=="Canada",]  
+Canada  
+`` ``` ``
+In this example, code is shown, but not executed.  
 
 Often there will be particular options that you'll want to use repeatedly; for this, you can set _global_ chunk options, like so:
 
