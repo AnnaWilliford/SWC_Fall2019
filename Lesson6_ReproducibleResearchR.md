@@ -73,7 +73,6 @@ RStudio creates the document with some example text to get you started. Note bel
 
 `` ``` ``{r cars}  
 summary(cars)  
-
 `` ``` ``
 
 These are chunks of R code that will be executed by knitr and replaced by their results. More on this later.
