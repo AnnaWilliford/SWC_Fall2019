@@ -149,13 +149,6 @@ You can make a hyperlink like this:
 
 You can include an image file like this: `![caption](http://url/for/file)`
 
-You can do subscripts (e.g., F~2~) with `F~2` and superscripts (e.g., F^2^) with `F^2^`.
-
-If you know how to write equations in [LaTeX](http://www.latex-project.org/), you'll be glad to know that you can use `$ $` and `$$ $$` to insert math equations, like `$E = mc^2$` and
-
-```
-$$y = \mu + \sum_{i=1}^p \beta_i x_i + \epsilon$$
-```
 
 ## R code chunks
 
