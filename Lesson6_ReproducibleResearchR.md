@@ -136,12 +136,11 @@ with some number of `#` symbols:
 
 You _compile_ the R Markdown document to an html webpage by clicking the "Knit HTML" in the upper-left. And note the little question mark next to it; click the question mark and you'll get a "Markdown Quick Reference" (with the Markdown syntax) as well to the RStudio documentation on R Markdown.
 
-> ### Challenge
->
-> Create a new R Markdown document. Delete all of the R code chunks and write a bit of Markdown (some sections, some italicized text, and an itemized list).
->
-> Convert the document to a webpage with `knit` button .
-
+**Challenge**
+```
+Create a new R Markdown document. Delete all of the R code chunks and write a bit of Markdown (some sections, some italicized text, and an itemized list).
+Convert the document to a webpage with `knit` button .
+```
 ## A bit more Markdown
 
 You can make a hyperlink like this:
@@ -173,7 +172,7 @@ Add code chunks to
 ```
 **Solution**
 > `` ``` ``{r load_ggplot2}  
-> library(ggplot2) 
+> library(ggplot2)   
 > `` ``` ``
 >
 > `` ``` ``{r load_gapminder}  
