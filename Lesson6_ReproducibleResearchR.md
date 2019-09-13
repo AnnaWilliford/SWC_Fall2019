@@ -243,6 +243,36 @@ The mean of life expectancy column is 59.4744394.
 You can also convert R Markdown to a PDF or a Word document. Click the little triangle next to the "Knit HTML" button to get a drop-down menu. Or you could put `pdf_document` or `word_document` in the header of the file.
 
 
+## Time for practice!
+
+**Here is your task:**  
+```
+For every unique country in gapminder dataset, if the country starts with 'Ma', use ggplot2 package to plot
+life expectancy(y axis) over years(x axis)
+```
+**Solution**
+```
+gapminder<-read.table("gapminder.txt", header = TRUE)
+getCountryData<-function(countryName, df){
+  countryData<-df[df$country==countryName,] 
+  return(countryData)
+}
+
+
+country_list=unique(gapminder$country)
+for(country in country_list) {
+  if(startsWith(country,"Ma")){
+    print(country)
+    countryData<-getCountryData(country, gapminder)
+    myplot<-ggplot(data=countryData)+aes(x=year,y=lifeExp)+geom_line(color="red")
+    #make a unique name
+    name=paste0(country,"_plot")
+    ggsave(myplot, filename=paste0(name,".png",sep="")) 
+  }
+}
+
+```
+
 ## Resources
 
 - [Knitr in a knutshell tutorial](http://kbroman.org/knitr_knutshell)
