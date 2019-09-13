@@ -247,31 +247,11 @@ You can also convert R Markdown to a PDF or a Word document. Click the little tr
 
 **Here is your task:**  
 ```
-For every unique country in gapminder dataset, if the country starts with 'Ma', use ggplot2 package to plot
-life expectancy(y axis) over years(x axis)
+For every unique country in gapminder dataset, if the country starts with 'Ma', use ggplot2 package 
+to plot life expectancy(y axis) over years(x axis)
 ```
 **Solution**
-```
-gapminder<-read.table("gapminder.txt", header = TRUE)
-getCountryData<-function(countryName, df){
-  countryData<-df[df$country==countryName,] 
-  return(countryData)
-}
-
-
-country_list=unique(gapminder$country)
-for(country in country_list) {
-  if(startsWith(country,"Ma")){
-    print(country)
-    countryData<-getCountryData(country, gapminder)
-    myplot<-ggplot(data=countryData)+aes(x=year,y=lifeExp)+geom_line(color="red")
-    #make a unique name
-    name=paste0(country,"_plot")
-    ggsave(myplot, filename=paste0(name,".png",sep="")) 
-  }
-}
-
-```
+Link to .Rmd?
 
 ## Resources
 
