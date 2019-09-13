@@ -10,15 +10,15 @@ I was given `gapminder.txt` dataset and asked to do the following:
 
 **For every unique country in gapminder.txt dataset, if the country starts with 'Ma', use ggplot2 package to plot life expectancy(y axis) over years(x axis).**  
 
-Here are the steps I need to implement in R to complete the above task.  
-1. Load ggplot2 library  
-2. Load gapminder.txt into R  
+Here are the steps I need to implement in R to complete this task.  
+1. Load `ggplot2` library  
+2. Load `gapminder.txt`  
 3. Create `country_list` that contains country names from `gapminder.txt`. 
-4. Start a `for` loop to iterate over every elemet of `country_list`
+4. Start a `for` loop to iterate over every element of `country_list`
 5. Use `if` statement to check if the country name starts with "Ma".    
 6. If it does, subset gapminder dataset to select information about just that country.   
-7. Make ggplot to plot life expectancy on y-axis and years on x-axis.  
-8. End `for` loop.
+7. Make ggplot to plot life expectancy on y-axis and years on x-axis using subset of the data from step 6.  
+8. Close `if`statement and `for` loop.
 
 
 Here is a scaffold for a programm:
@@ -39,10 +39,8 @@ for(country in country_list){
      #6 make ggplot
    }
 }
-
 ```
-Here is the implementations of these steps:  
-
+Here is the implementation of these steps:  
 
 ```{r, plots}
 #load packages
@@ -66,9 +64,7 @@ for(country in country_list) {
   }
 }
 ```
-
-
-If you want to save plots to file, make a unique name for every plot and save with `ggsave`
+If you want to save each plot to a separate file, make a unique name for every plot and save with `ggsave`
 
 ```{r, loop_if_plot, eval=FALSE}
 #load packages
@@ -94,9 +90,8 @@ for(country in country_list) {
   }
 }
 ```
-
-
 **Note** The script would be easier to read if subsetting was done with a user-defined function:
+
 ```{r, subsetting function, eval=FALSE}
 getCountryData<-function(countryName, df){
   countryData<-df[df$country==countryName,] 
@@ -105,6 +100,7 @@ getCountryData<-function(countryName, df){
 ```
 
 Then, we can rewrite the above script like this:
+
 ```{r, loop_if_plot_withFunction, eval=FALSE}
 #load packages
 library(ggplot2)
