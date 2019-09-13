@@ -247,8 +247,12 @@ You can also convert R Markdown to a PDF or a Word document. Click the little tr
 
 **Here is your task:**  
 ```
-For every unique country in gapminder dataset, if the country starts with 'Ma', use ggplot2 package 
-to plot life expectancy(y axis) over years(x axis)
+Write `RprogrammingTask.Rmd` explaining how you would approach the following task.
+"For every unique country in gapminder dataset, if the country starts with 'Ma', use ggplot2 package 
+to plot life expectancy(y axis) over years(x axis)"
+
+Use markdown text to break the problem into multiple steps (in English first). 
+Then try to implement each step in R by adding code chunks.
 ```
 **Solution**
 See [RprogrammingTask.Rmd](RprogrammingTask.Rmd)
